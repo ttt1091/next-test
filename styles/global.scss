@@ -99,10 +99,12 @@ section {
 }
 
 .jumbtron{
-  height: 100vh;
+  height: calc(100vh - 32px);
   background-image: url('https://source.unsplash.com/900x1600/?sky');
+  // background-image: url('../public/images/header.png');
   background-repeat: no-repeat;
   background-size: cover;
+  // background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,4 +139,10 @@ section {
     text-align: center;
     padding: 4px;
   }
+}
+
+
+.container{
+  max-width: 1024px;
+  margin: 0 auto;
 }

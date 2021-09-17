@@ -5,16 +5,14 @@ import HoverButton from '../components/hoverbutton'
 
 export default function Index() {
   return (
-    <div className="container">
-      <main>
-        <h1 className="title">
-          Change{` `}
-          <Link href="/about">test</Link>
-        </h1>
-        <div className="dummey">
-          test
-        </div>
-      </main>
+    <main>
+      <h1 className="title">
+        Change{` `}
+        <Link href="/about">test</Link>
+      </h1>
+      <div className="dummey">
+        test
+      </div>
       <style jsx>{`
         .title {
           font-size: 1rem;
@@ -24,7 +22,7 @@ export default function Index() {
           height: 200vh;
         }
       `}</style>
-    </div>
+    </main>
   )
 }
 
