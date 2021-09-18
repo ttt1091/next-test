@@ -98,6 +98,18 @@ section {
   padding: 0;
 }
 
+
+@keyframes upDownButton {
+  0% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
+
+
 .jumbtron{
   height: calc(100vh - 32px);
   background-image: url('https://source.unsplash.com/900x1600/?sky');
@@ -109,6 +121,11 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@supports (-webkit-touch-callout: none) {
+  .jumbtron {
+    height: -webkit-fill-available;
+  }
 }
 
 .hover-button{
@@ -139,6 +156,7 @@ section {
     text-align: center;
     padding: 4px;
   }
+  animation: upDownButton 1.5s infinite;
 }
 
 
