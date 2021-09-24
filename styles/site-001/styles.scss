@@ -1,3 +1,5 @@
+html{ font-size: 62.5%; }
+body{ font-size: 1.4rem; }
 .first-view {
   background: linear-gradient(45deg, #8E354A 0%, #8E354A 50%, #4D5139 50%, #4D5139 100%);
   display: flex;
@@ -88,4 +90,63 @@
     margin: 8px;
     padding: 4px;
   }
+}
+.item-card{
+  border: solid 1px #CCC;
+  margin: .8rem;
+  background-color: #FFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  .item-card-prof{
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    .item-card-prof-icon{
+      width: 80px;
+      img{
+        width: 100%;
+        border-radius: 50%;
+        border: solid 1px #ccc;
+        padding: 3px;
+      }
+    }
+    .item-card-prof-icon-caption{
+      text-align: center;
+      color: #444;
+    }
+  }
+  .item-card-prof ~ .item-card-body{
+    flex-grow: 2; 
+  }
+  .item-card-body{
+    padding: .8rem;
+  }
+}
+
+.long-text{
+  color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+.link-button{
+  display: block;
+  text-align: center;
+  margin: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+  border: solid 1px #ddd;
+  border-radius: 8px;
+  background: #dee;
+  color: #444;
+  text-decoration: none;
+  font-size: 1.8rem;
 }
