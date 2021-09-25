@@ -1,12 +1,20 @@
 import Link from 'next/link'
 import Layout from '../../components/site-001/home-layout'
 import styles from '../../styles/site-001/styles.module.scss'
+import Image from "next/image";
+import TopMsgImg from '../../public/images/dummy-300x250.png'
+import CardIconImg from '../../public/images/dummy-icon-100x100.png'
 
 export default function Index() {
   return (
-    <main>
+    <main className={styles.main}>
       <div className={styles['top-message']}>
-        <img src="images/dummy-300x250.png" alt="" />
+        <Image
+          src={TopMsgImg}
+          alt="Picture of the author"
+          width={300}
+          height={250}
+        />
       </div>
       <section className={styles['item-section']}>
         <h2>○○○○</h2>
@@ -27,7 +35,13 @@ export default function Index() {
         <div className={styles['item-card']}>
           <div className={styles['item-card-prof']}>
             <div className={styles['item-card-prof-icon']}>
-              <img src="images/dummy-icon-100x100.png" alt="" />
+              <Image
+                className={styles['card-icon-image']}
+                src={CardIconImg}
+                alt="card icon"
+                width={80}
+                height={80}
+              />
             </div>
             <div className={styles['item-card-prof-icon-caption']}>
               <span>日本 太郎</span>
