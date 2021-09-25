@@ -1,16 +1,15 @@
+import styles from '../../styles/site-001/styles.module.scss'
+
 export default function firstView() {
   return (   
     <section>
-      <div className="first-view">
-        <div className="first-view-title">
+      <div className={styles['first-view']}>
+        <div className={styles['first-view-title']}>
           <h1>site</h1>
         </div>
-        <div className="first-view-main">title</div>
-        <div className="first-view-bottom"></div>
+        <div className={styles['first-view-main']}>title</div>
+        <div className={styles['first-view-bottom']}></div>
         <style jsx>{`
-          .first-view {
-            position: relative;
-          }
         `}</style>
       </div>
     </section>
